@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dionysus corner — about me</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="theme-control"><button type="button" id="theme-toggle">Toggle Light/Dark Mode</button></div>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="#top">dionysus.corner</a>
+      <ul class="navbar__links">
+        <li><a href="#top">home</a></li>
+        <li><a href="#about-cards">about</a></li>
+        <li><a href="#quest-log">quest log</a></li>
+        <li><a href="#friend-sites">friends</a></li>
+        <li><a href="#stats">stats</a></li>
+        <li><a href="#guestbook">guestbook</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    
+    <section class="hero" id="hero">
+      <div class="hero__card">
+        <figure class="hero__avatar">
+          <img src="avatar.svg" alt="Pixel-art self portrait of Mochi" width="160" height="160">
+          <figcaption> tea enthusiast</figcaption>
+        </figure>
+        <div class="hero__text">
+          <h1>hii, i'm Omama! <span class="blink">●</span></h1>
+          <p id="opening-status" class="status-banner" role="status">Checking opening status...</p>
+          <p>
+            welcome to my webpage! this is where i yap about my interests, my favorite
+            things, and a running log of whatever quest i'm on this week. grab a cup of
+            something warm and look around — the guestbook is open at the bottom if you'd
+            like to say hi.
+          </p>
+          <p class="hero__badges">
+            
+            <span class="badge"> powered</span>
+            <span class="badge">100% pixels</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="cards" id="about-cards" aria-labelledby="cards-heading">
+      <h2 id="cards-heading">a few things about me</h2>
+      <div class="cards__grid">
+
+        <article class="card">
+          <h3>my hobbies</h3>
+          <p>
+             crocheting , reading , watching movies and animes.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>now playing</h3>
+          <p>
+            currently rewatching my comfort movie for the nth time because i dont get bored of things i love xoxo.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>desk setup</h3>
+          <p>
+            an ipad , a diary which i seldom use for journaling , and a
+            barely functioning  laptop that is suppose to be the fastest running electronic device in my life.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    
+    <section class="split" id="quest-log">
+      <article class="panel">
+        <h2>My favourite books of this year</h2>
+        <ol type="A" class="quest-list">
+          <li>My Friends by Fredrick Backman</li>
+          <li>fahrenheit 451 by Ray Bradbury</li>
+          <li>Ice-candy man by Bapsi Sidhwa</li>
+
+        </ol>
+      </article>
+
+      <aside class="panel" id="friend-sites">
+        <h2>friend sites &amp; webring</h2>
+        <p>some corners of the internet i keep coming back to:</p>
+        <ul class="link-list">
+          <li><a href="https://neocities.org" target="_blank" rel="noopener noreferrer">neocities.org</a> — where all this started</li>
+          <li><a href="https://angs-corner.nekoweb.org/" target="_blank" rel="noopener noreferrer">angs-corner.nekoweb.org</a> — my inspo</li>
+          <li><a href="#guestbook">sign my guestbook →</a></li>
+        </ul>
+      </aside>
+    </section>
+
+
+    <section class="cafe-story" id="cafe-story">
+      <article class="panel">
+        <h2>a little cafe corner</h2>
+        <p>Welcome to Dionysus Corner, a cozy little place for warm drinks, sweet pastries, and quiet moments. Pick a treat, take a breath, and make yourself at home.</p>
+        <p id="extra-story" hidden>Our menu is inspired by slow mornings, comforting flavors, and the simple joy of sharing something delicious. Whether you need a coffee before studying or a croissant with your tea, we hope you find a small moment of happiness here.</p>
+        <button type="button" id="read-more">Read More</button>
+      </article>
+    </section>
+
+    
+    <section class="menu-section" id="menu">
+      <h2>cafe menu</h2>
+      <p>Choose your treats below to calculate your order total.</p>
+      <div class="menu-filters" aria-label="Filter menu category">
+        <button type="button" class="filter-button active" data-filter="all">All</button>
+        <button type="button" class="filter-button" data-filter="drinks">Drinks</button>
+        <button type="button" class="filter-button" data-filter="pastries">Pastries</button>
+      </div>
+      <div class="table-wrap">
+        <table class="menu-table">
+          <caption>select items to add them to your order</caption>
+          <thead><tr><th scope="col">Choose</th><th scope="col">Menu item</th><th scope="col">Category</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr data-category="drinks"><td><input type="checkbox" class="menu-item" value="3" aria-label="Add Espresso"></td><th scope="row">Espresso</th><td>Drinks</td><td>$3</td></tr>
+            <tr data-category="drinks"><td><input type="checkbox" class="menu-item" value="4" aria-label="Add Latte"></td><th scope="row">Latte</th><td>Drinks</td><td>$4</td></tr>
+            <tr data-category="drinks"><td><input type="checkbox" class="menu-item" value="3" aria-label="Add Iced Tea"></td><th scope="row">Iced Tea</th><td>Drinks</td><td>$3</td></tr>
+            <tr data-category="pastries"><td><input type="checkbox" class="menu-item" value="4" aria-label="Add Croissant"></td><th scope="row">Croissant</th><td>Pastries</td><td>$4</td></tr>
+            <tr data-category="pastries"><td><input type="checkbox" class="menu-item" value="5" aria-label="Add Chocolate Muffin"></td><th scope="row">Chocolate Muffin</th><td>Pastries</td><td>$5</td></tr>
+            <tr data-category="pastries"><td><input type="checkbox" class="menu-item" value="6" aria-label="Add Cinnamon Roll"></td><th scope="row">Cinnamon Roll</th><td>Pastries</td><td>$6</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="total" aria-live="polite">Total: $0</p>
+    </section>
+
+    <section class="stats" id="stats">
+      <h2>character stat sheet</h2>
+      <table>
+        <caption>a very scientific breakdown of my current skills</caption>
+        <thead>
+          <tr>
+            <th scope="col">stat</th>
+            <th scope="col">level</th>
+            <th scope="col">currently training</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">pixel art</th>
+            <td>lvl 7</td>
+            <td>shading on tiny sprites</td>
+          </tr>
+          <tr>
+            <th scope="row">html &amp; css</th>
+            <td>lvl 5</td>
+            <td>grid layouts</td>
+          </tr>
+          <tr>
+            <th scope="row">tea brewing</th>
+            <td>lvl 9</td>
+            <td>not burning the leaves</td>
+          </tr>
+          <tr>
+            <th scope="row">plant parenting</th>
+            <td>lvl 3</td>
+            <td>keeping mint alive past week two</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section class="guestbook" id="guestbook">
+      <h2>sign my guestbook</h2>
+      <p>leave a little note! i read every single one.</p>
+<form action="#" method="post" class="guestbook__form" id="guestbook-form">
+        <div class="form-row">
+          <label for="name">your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Starlight22" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">your email (kept secret, promise)</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="birth-year">birth year (e.g. 2002)</label>
+          <input type="text" id="birth-year" name="birth-year" inputmode="numeric" placeholder="2002" pattern="[0-9]{4}" required>
+          <p class="helper-text">Student discount: ages 13–25. Senior discount: age 60 or older.</p>
+        </div>
+
+        <div class="form-row">
+          <label for="special-notes">special order requests (max 100 characters)</label>
+          <textarea id="special-notes" name="special-notes" rows="3" maxlength="100" placeholder="Any special instructions?"></textarea>
+          <p id="char-count" aria-live="polite">100 characters remaining</p>
+        </div>
+      
+
+        
+
+        <div class="form-row">
+          <label for="message">your message</label>
+          <textarea id="message" name="message" rows="4" placeholder="say hi!"></textarea>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>how's your day going?</legend>
+          <label class="choice"><input type="radio" name="mood" value="great" checked> pretty great</label>
+          <label class="choice"><input type="radio" name="mood" value="okay"> just okay</label>
+          <label class="choice"><input type="radio" name="mood" value="rough"> kind of rough</label>
+        </fieldset>
+
+        <fieldset class="form-row">
+          <legend>a couple of options</legend>
+          <label class="choice"><input type="checkbox" name="updates" value="yes"> let me know when the site updates</label>
+          <label class="choice"><input type="checkbox" name="pixel-club" value="yes"> add me to the pixel-art pen pal list</label>
+        </fieldset>
+
+        <button type="submit">sign the book </button>
+        <p id="form-message" class="form-feedback" role="status" aria-live="polite"></p>
+        <p id="discount-message" class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>made with tiny squares and a lot of tea &middot; last updated September 2026</p>
+    <p class="footer-links">
+      <a href="#top">back to top </a> &middot;
+      <a href="#guestbook">guestbook</a> &middot;
+      <a href="https://neocities.org" target="_blank" rel="noopener noreferrer">powered by the neocities spirit</a>
+    </p>
+    <p class="visitor-counter" aria-label="visitor counter">visitors: 000482</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
