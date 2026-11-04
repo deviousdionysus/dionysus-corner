@@ -359,7 +359,11 @@ body.dark-mode {
     color: #F3EDF9;
     background-color: #211A2B;
 }
-
+body.dark-mode .badge {
+    background-color: #704C83;
+    border-color: #D8C9ED;
+    color: #F3EDF9;
+}
 body.dark-mode .navbar,
 body.dark-mode .hero__card,
 body.dark-mode .panel,
